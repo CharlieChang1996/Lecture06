@@ -1,0 +1,339 @@
+     +--------------------------------------------------------------------+
+     ¦                • MobaXterm Personal Edition v9.0 •                 ¦
+     ¦             (X server, SSH client and network tools)               ¦
+     ¦                                                                    ¦
+     ¦ ? Your computer drives are accessible through the /drives path     ¦
+     ¦ ? Your DISPLAY is set to 129.215.247.74:0.0                        ¦
+     ¦ ? When using SSH, your remote DISPLAY is automatically forwarded   ¦
+     ¦ ? Each command status is specified by a special symbol (? or ?)    ¦
+     ¦                                                                    ¦
+     ¦ • Important:                                                       ¦
+     ¦ This is MobaXterm Personal Edition. The Professional edition       ¦
+     ¦ allows you to customize MobaXterm for your company: you can add    ¦
+     ¦ your own logo, your parameters, your welcome message and generate  ¦
+     ¦ either an MSI installation package or a portable executable.       ¦
+     ¦ We can also modify MobaXterm or develop the plugins you need.      ¦
+     ¦ For more information: http://mobaxterm.mobatek.net/download.html   ¦
+     +--------------------------------------------------------------------+
+
+[2019-10-04 11:05.44]  ~
+[s1937334.PLAB-MH1-074] ? ssh -X 129.215.237.197
+-----------------------------------------------------------------------------
+Unauthorised access is a criminal offence under The Computer Misuse Act 1990.
+             If you are not an authorised user, disconnect NOW.
+-----------------------------------------------------------------------------
+Last login: Wed Oct  2 19:28:34 2019 from bioinfmsc5.bio.ed.ac.uk
+bioinfmsc5:~$ pwd
+/localdisk/home/s1937334
+bioinfmsc5:~$ cd/localdisk/home/s1937334/LectureExercise/
+-bash: cd/localdisk/home/s1937334/LectureExercise/: No such file or directory
+bioinfmsc5:~$ cd /localdisk/home/s1937334/LectureExercise/
+bioinfmsc5:~/LectureExercise$ madir Lecture06
+-bash: madir: command not found
+bioinfmsc5:~/LectureExercise$ mkdir Lecture06
+bioinfmsc5:~/LectureExercise$ cd /localdisk/home/s1937334/LectureExercise/Lecture06/
+bioinfmsc5:~/LectureExercise/Lecture06$ cp /localdisk/data/BPSM/Lecture06_AI
+cp: missing destination file operand after ‘/localdisk/data/BPSM/Lecture06_AI’
+Try 'cp --help' for more information.
+bioinfmsc5:~/LectureExercise/Lecture06$ cp /localdisk/data/BPSM/Lecture06_AI/579cox.accessions
+cp: missing destination file operand after ‘/localdisk/data/BPSM/Lecture06_AI/579cox.accessions’
+Try 'cp --help' for more information.
+bioinfmsc5:~/LectureExercise/Lecture06$ cp /localdisk/data/BPSM/Lecture06_AI/579cox.accessions .
+bioinfmsc5:~/LectureExercise/Lecture06$ cp /localdisk/data/BPSM/Lecture06_AI/579cox.fasta .
+bioinfmsc5:~/LectureExercise/Lecture06$ git init
+Initialized empty Git repository in /localdisk/home/s1937334/LectureExercise/Lecture06/.git/
+bioinfmsc5:~/LectureExercise/Lecture06$ git add 579cox.accessions 579cox.fasta
+bioinfmsc5:~/LectureExercise/Lecture06$ git commit
+error: cannot run gedit--wait--new-window: No such file or directory
+error: unable to start editor 'gedit--wait--new-window'
+Please supply the message using either -m or -F option.
+bioinfmsc5:~/LectureExercise/Lecture06$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   579cox.accessions
+#       new file:   579cox.fasta
+#
+bioinfmsc5:~/LectureExercise/Lecture06$ git commit -m "lecture 06"
+[master (root-commit) 3435a3e] lecture 06
+ Committer: Haoyu Zhang <s1937334@bioinfmsc5.bio.ed.ac.uk>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 6368 insertions(+)
+ create mode 100755 579cox.accessions
+ create mode 100755 579cox.fasta
+bioinfmsc5:~/LectureExercise/Lecture06$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bioinfmsc5:~/LectureExercise/Lecture06$ curl -u CharlieChang1996 https://api.github.com/user/repos -d '{"name":"Lecture06"}'
+Enter host password for user 'CharlieChang1996':
+{
+  "id": 212788608,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyMTI3ODg2MDg=",
+  "name": "Lecture06",
+  "full_name": "CharlieChang1996/Lecture06",
+  "private": false,
+  "owner": {
+    "login": "CharlieChang1996",
+    "id": 55718752,
+    "node_id": "MDQ6VXNlcjU1NzE4NzUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/55718752?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/CharlieChang1996",
+    "html_url": "https://github.com/CharlieChang1996",
+    "followers_url": "https://api.github.com/users/CharlieChang1996/followers",
+    "following_url": "https://api.github.com/users/CharlieChang1996/following{/other_user}",
+    "gists_url": "https://api.github.com/users/CharlieChang1996/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/CharlieChang1996/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/CharlieChang1996/subscriptions",
+    "organizations_url": "https://api.github.com/users/CharlieChang1996/orgs",
+    "repos_url": "https://api.github.com/users/CharlieChang1996/repos",
+    "events_url": "https://api.github.com/users/CharlieChang1996/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/CharlieChang1996/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "html_url": "https://github.com/CharlieChang1996/Lecture06",
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/CharlieChang1996/Lecture06",
+  "forks_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/forks",
+  "keys_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/collaborators{/collaborator}",
+  "teams_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/teams",
+  "hooks_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/hooks",
+  "issue_events_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/issues/events{/number}",
+  "events_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/events",
+  "assignees_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/tags",
+  "blobs_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/languages",
+  "stargazers_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/stargazers",
+  "contributors_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/contributors",
+  "subscribers_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/subscribers",
+  "subscription_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/subscription",
+  "commits_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/git/commits{/sha}",
+  "comments_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/issues/comments{/number}",
+  "contents_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/compare/{base}...{head}",
+  "merges_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/merges",
+  "archive_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/{archive_format}{/ref}",
+  "downloads_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/downloads",
+  "issues_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/milestones{/number}",
+  "notifications_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/notifications{?since,all,participating}",
+  "labels_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/labels{/name}",
+  "releases_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/releases{/id}",
+  "deployments_url": "https://api.github.com/repos/CharlieChang1996/Lecture06/deployments",
+  "created_at": "2019-10-04T10:20:33Z",
+  "updated_at": "2019-10-04T10:20:33Z",
+  "pushed_at": "2019-10-04T10:20:34Z",
+  "git_url": "git://github.com/CharlieChang1996/Lecture06.git",
+  "ssh_url": "git@github.com:CharlieChang1996/Lecture06.git",
+  "clone_url": "https://github.com/CharlieChang1996/Lecture06.git",
+  "svn_url": "https://github.com/CharlieChang1996/Lecture06",
+  "homepage": null,
+  "size": 0,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": null,
+  "has_issues": true,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": null,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "permissions": {
+    "admin": true,
+    "push": true,
+    "pull": true
+  },
+  "allow_squash_merge": true,
+  "allow_merge_commit": true,
+  "allow_rebase_merge": true,
+  "network_count": 0,
+  "subscribers_count": 0
+}
+bioinfmsc5:~/LectureExercise/Lecture06$ git push -u https://github.com/CharlieChang1996/Lecture06.git master
+Username for 'https://github.com': CharlieChang1996
+Password for 'https://CharlieChang1996@github.com':
+Counting objects: 4, done.
+Delta compression using up to 64 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 45.30 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/CharlieChang1996/Lecture06.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from https://github.com/CharlieChang1996/Lecture06.git.
+bioinfmsc5:~/LectureExercise/Lecture06$
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -graph 579cox.fasta
+Plot conservation of a sequence alignment
+Input (aligned) sequence set: 579cox.accessions
+Error: Failed to open filename '579cox.accessions'
+Error: Unable to read sequence '579cox.accessions'
+Input (aligned) sequence set: 579cox.fasta
+Window size [4]:
+Devices allowed (with alternative names) are:-
+ps (postscript)
+hpgl
+hp7470
+hp7580
+meta
+cps (colourps)
+x11 (xwindows)
+tek (tek4107t)
+tekt (tektronics)
+none (null, text)
+data
+xterm
+svg
+Error: Invalid XY graph value '579cox.fasta'
+Died: plotcon terminated: Bad value for '-graph' and no prompt
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -winsize
+Died: Value required for '-winsize'
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -winsize 579cox.fasta
+Plot conservation of a sequence alignment
+Input (aligned) sequence set: 579cox.fasta
+Error: Failed to open filename '579cox.fasta'
+Error: Unable to read sequence '579cox.fasta'
+Input (aligned) sequence set: 579cox.accessions
+Error: Failed to open filename '579cox.accessions'
+Error: Unable to read sequence '579cox.accessions'
+Died: plotcon terminated: Bad value for '-sequences' and no more retries
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcomn -h
+-bash: plotcomn: command not found
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -h
+Plot conservation of a sequence alignment
+Version: EMBOSS:6.6.0.0
+
+   Standard (Mandatory) qualifiers:
+  [-sequences]         seqset     File containing a sequence alignment
+   -winsize            integer    [4] Number of columns to average alignment
+                                  quality over. The larger this value is, the
+                                  smoother the plot will be. (Any integer
+                                  value)
+   -graph              xygraph    [$EMBOSS_GRAPHICS value, or x11] Graph type
+                                  (ps, hpgl, hp7470, hp7580, meta, cps, x11,
+                                  tek, tekt, none, data, xterm, svg)
+
+   Additional (Optional) qualifiers:
+   -scorefile          matrix     [EBLOSUM62 for protein, EDNAFULL for DNA]
+                                  This is the scoring matrix file used when
+                                  comparing sequences. By default it is the
+                                  file 'EBLOSUM62' (for proteins) or the file
+                                  'EDNAFULL' (for nucleic sequences). These
+                                  files are found in the 'data' directory of
+                                  the EMBOSS installation.
+
+   Advanced (Unprompted) qualifiers: (none)
+   General qualifiers:
+   -help               boolean    Report command line options and exit. More
+                                  information on associated and general
+                                  qualifiers can be found with -help -verbose
+
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcom -sequences 579cox.fasta
+-bash: plotcom: command not found
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -sequences 579cox.fasta
+Plot conservation of a sequence alignment
+Window size [4]: 4
+Graph type [x11]: ps
+    Created plotcon.ps
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -sequences 579cox.fasta
+Plot conservation of a sequence alignment
+Window size [4]: 4
+Graph type [x11]: jh
+Devices allowed (with alternative names) are:-
+ps (postscript)
+hpgl
+hp7470
+hp7580
+meta
+cps (colourps)
+x11 (xwindows)
+tek (tek4107t)
+tekt (tektronics)
+none (null, text)
+data
+xterm
+svg
+Error: Invalid XY graph value 'jh'
+Graph type [x11]: hpgl
+Created plotcon.hpgl
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -sequences 579cox.fasta
+Plot conservation of a sequence alignment
+Window size [4]: 4
+Graph type [x11]: xll
+Devices allowed (with alternative names) are:-
+ps (postscript)
+hpgl
+hp7470
+hp7580
+meta
+cps (colourps)
+x11 (xwindows)
+tek (tek4107t)
+tekt (tektronics)
+none (null, text)
+data
+xterm
+svg
+Error: Invalid XY graph value 'xll'
+Graph type [x11]: x11
+Devices allowed (with alternative names) are:-
+ps (postscript)
+hpgl
+hp7470
+hp7580
+meta
+cps (colourps)
+x11 (xwindows)
+tek (tek4107t)
+tekt (tektronics)
+none (null, text)
+data
+xterm
+svg
+Error: Invalid XY graph value 'x11'
+Died: plotcon terminated: Bad value for '-graph' and no more retries
+bioinfmsc5:~/LectureExercise/Lecture06$ plotcon -sequences 579cox.fasta
+Plot conservation of a sequence alignment
+Window size [4]: 4
+Graph type [x11]:
+X connection to localhost:52.0 broken (explicit kill or server shutdown).
+bioinfmsc5:~/LectureExercise/Lecture06$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+bioinfmsc5:~/LectureExercise/Lecture06$
